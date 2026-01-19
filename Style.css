@@ -1,0 +1,167 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #09df1f;
+}
+
+h2, h3 {
+    color: #0056b3;
+}
+
+header, footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header p {
+    margin: 0.5em 0;
+}
+
+/* Main Content */
+main {
+    padding: 1.5em;
+}
+
+#proyectos article {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #fff;
+}
+
+#proyectos article h3 {
+    margin-top: 0;
+}
+
+#proyectos article a {
+    color: #0056b3;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+#proyectos article a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contacto form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    font-weight: bold;
+}
+
+#contacto form input, #contacto form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#contacto form button {
+    display: block;
+    width: 100%;
+    background: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 0.7em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease;
+    -moz-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+}
+
+#contacto form button:hover {
+    background: #004494;
+}
+
+/* Footer */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.5em 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    header, footer {
+        padding: 0.8em 0;
+    }
+
+    #proyectos article {
+        margin: 1em auto;
+        padding: 1em;
+        text-align: center;
+    }
+
+    #contacto form {
+        padding: 1em;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header, footer {
+        font-size: 0.8em;
+    }
+
+    #proyectos article {
+        font-size: 0.9em;
+    }
+
+    #contacto form button {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+}
